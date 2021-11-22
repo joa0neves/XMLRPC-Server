@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Ocurrence">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="Unique ID" type="xs:positiveInteger"/>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Age" type="xs:positiveInteger"/>
+      <xs:element name="Gender" type="xs:string"/>
+      <xs:element name="Race" type="xs:string"/>
+      <xs:element name="Race with Imputation" type="xs:string"/>
+      <xs:element name="Date of injury resulting in death" type="xs:date"/>
+      <xs:element name="Location of Injury" type="xs:string"/>
+      <xs:element name="Location of Death(city)" type="xs:string"/>
+      <xs:element name="State" type="xs:string"/>
+      <xs:element name="Location of Death(zip code)" type="xs:string"/>
+      <xs:element name="Location of Death(county)" type="xs:string"/>
+      <xs:element name="Full address" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+</xs:schema> 
