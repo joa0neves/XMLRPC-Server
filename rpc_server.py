@@ -42,9 +42,6 @@ with SimpleXMLRPCServer(('localhost', 9000),requestHandler=RequestHandler) as se
             cur.execute('CREATE TABLE IF NOT EXISTS files(id serial PRIMARY KEY, content XML NOT NULL, datetime timestamp NOT NULL)')
             cur.close()
 
-            with open("csv_file.csv", "r") as file:
-                xml = converter.convert_to_xml(file)
-
             cur = conn.cursor()
             statement= 'INSERT INTO files (content) VALUES(%s)'
             cur.execute(statement,xml)
